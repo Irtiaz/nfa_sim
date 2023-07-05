@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+
+    <title>NFA Simulator</title>
+  </head>
+
+  <body>
+    <h4>NFA Simulator by Md Imtiaz Kabir and Md Irtiaz Kabir</h4>
+    <div>
+      <b>Instructions</b>
+      <ul>
+        <li>
+          Click with left mouse button to add a state. <b>q0</b> is your start
+          state
+        </li>
+        <li>
+          Hold <i>Ctrl</i> and click on the 2 states of transition (all while
+          holding down the <i>Ctrl</i> key) and enter symbols when prompted
+        </li>
+        <li>
+          Hover the mouse on top of a state and press <i>a</i> to toggle it to
+          an accepting state or non-accepting state
+        </li>
+        <li>
+          When done with your state digram press <i>space</i> to enter the
+          string
+        </li>
+        <li>
+          Your still unread symbols will show up on the top right corner and the
+          already read part will appear on the top left corner
+        </li>
+        <li>
+          Press <b><i>space</i></b> to simulate each transition level
+        </li>
+        <li>
+          Press <i>r</i> to reset your automaton and enter a new test string
+        </li>
+      </ul>
+    </div>
+    <main style="display: flex; justify-content: center"></main>
+    <script src="sketch.js"></script>
+    <script src="Vertex.js"></script>
+    <script src="Event.js"></script>
+    <script src="EventManager.js"></script>
+  </body>
+</html>
